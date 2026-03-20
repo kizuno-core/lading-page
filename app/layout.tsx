@@ -30,7 +30,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" className={`${archivoBlack.variable} ${archivo.variable} h-full antialiased`}>
+    <html lang="pt-BR" className={`${archivoBlack.variable} ${archivo.variable} h-full antialiased`} style={{ colorScheme: 'dark' }}>
       <body className="min-h-full font-[family-name:var(--font-archivo)]">{children}</body>
     </html>
   )

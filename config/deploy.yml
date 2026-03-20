@@ -1,0 +1,25 @@
+service: kizuno-landing
+image: aalmeidadev/kizuno-landing
+
+ssh:
+  user: root
+
+servers:
+  - 162.243.167.215
+
+proxy:
+  ssl: true
+  host: kizuno.com.br
+  app_port: 3002
+
+builder:
+  arch: amd64
+
+registry:
+  username: aalmeidadev
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+env:
+  clear:
+    NODE_ENV: production
